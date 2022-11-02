@@ -1,0 +1,38 @@
+[
+    {
+        "id": "01",
+        "image":"https://i.ibb.co/6b6pLXx/1.png",
+        "name":"Car engine plug",
+        "price":"20"
+    },
+    {
+        "id": "02",
+        "image":"https://i.ibb.co/930b3t0/2.png",
+        "name":"Car air filter",
+        "price":"10"
+    },
+    {
+        "id": "03",
+        "image":"https://i.ibb.co/VtMV0h1/3.png",
+        "name":"Cools red light",
+        "price":"15"
+    },
+    {
+        "id": "04",
+        "image":"https://i.ibb.co/61bxkxN/4.png",
+        "name":"Head light",
+        "price":"35"
+    },
+    {
+        "id": "05",
+        "image":"https://i.ibb.co/MsNKYZz/5.png",
+        "name":"MRF Tire",
+        "price":"75"
+    },
+    {
+        "id": "06",
+        "image":"https://i.ibb.co/QrCBr58/6.png",
+        "name":"Battery",
+        "price":"55"
+    }
+]
