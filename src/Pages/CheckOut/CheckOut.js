@@ -15,7 +15,7 @@ const CheckOut = () => {
         const phone = form.phone.value;
         const message = form.message.value;
 
-        const service = {
+        const orders = {
             service:_id,
             serviceName: title,
             customerName: name,
@@ -25,6 +25,23 @@ const CheckOut = () => {
             message
 
         }
+
+        fetch('http://localhost:5000/orders', {
+            method:'POST',
+            headers:{
+                'content-type': 'application/json'
+            },
+            body:JSON.stringify(orders)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            if(data?.acknowledged){
+                alert('order placed successfully')
+                form.reset()
+            }
+            
+            })
+        .catch(err=>console.error(err))
     }
     return (
         <div>
@@ -35,7 +52,7 @@ const CheckOut = () => {
 
             <input type="text" name='firstName' placeholder="First Name" className="input input-bordered w-full" />
             <input type="text" name='lastName' placeholder="Last Name" className="input input-bordered w-full " />
-            <input type="text" name='Phone' placeholder="Phone" className="input input-bordered w-full " />
+            <input type="text" name='phone' placeholder="Phone" className="input input-bordered w-full " />
             <input type="text" name='email' placeholder="Email" defaultValue={user?.email} readOnly className="input input-bordered w-full " />
             </div>
             

@@ -2,7 +2,7 @@ import React from "react";
 import { FaStar } from 'react-icons/fa';
 
 const Productcard = ({ product }) => {
-  console.log(product);
+  // console.log(product);
   return (
     <div className="card p-4 shadow-xl">
       <figure>
